@@ -1,6 +1,12 @@
 import React from "react";
 import { Button, Col, Container, Row } from "react-bootstrap";
 import "./App.css";
+import { ChangeType } from "./components/ChangeType";
+import { RevealAnswer } from "./components/RevealAnswer";
+import { StartAttempt } from "./components/StartAttempt";
+import { TwoDice } from "./components/TwoDice";
+import { CycleHoliday } from "./components/CycleHoliday";
+import { Counter } from "./components/Counter";
 
 function App(): JSX.Element {
     return (
@@ -10,7 +16,7 @@ function App(): JSX.Element {
             </header>
             <h1>This is another header added for testing, Hello World</h1>
             <img
-                src="C:\Users\NM\Documents\cute_Cat_for_275.png"
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmXPqsoh1FPhGphKZpkxQQz2reP8bQZb28eQ&usqp=CAU"
                 alt="A picture of a cute ginger cat"
             />
             Things I love about cats:
@@ -36,6 +42,18 @@ function App(): JSX.Element {
                     </Col>
                 </Row>
             </Container>
+            <hr></hr>
+            <Counter></Counter>
+            <hr />
+            <RevealAnswer></RevealAnswer>
+            <hr />
+            <StartAttempt></StartAttempt>
+            <hr />
+            <TwoDice></TwoDice>
+            <hr />
+            <ChangeType></ChangeType>
+            <hr />
+            <CycleHoliday></CycleHoliday>
         </div>
     );
 }
