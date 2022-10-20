@@ -14,10 +14,9 @@ function App(): JSX.Element {
             <header className="App-header">
                 UD CISC275 React Hooks TypeScript , Nafisa Maryam
             </header>
-<<<<<<< HEAD
             <h1>This is another header added for testing, Hello World</h1>
             <img
-                src="C:\Users\NM\Documents\cute_Cat_for_275.png"
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmXPqsoh1FPhGphKZpkxQQz2reP8bQZb28eQ&usqp=CAU"
                 alt="A picture of a cute ginger cat"
             />
             Things I love about cats:
@@ -43,7 +42,6 @@ function App(): JSX.Element {
                     </Col>
                 </Row>
             </Container>
-=======
             <hr></hr>
             <Counter></Counter>
             <hr />
@@ -56,7 +54,6 @@ function App(): JSX.Element {
             <ChangeType></ChangeType>
             <hr />
             <CycleHoliday></CycleHoliday>
->>>>>>> upstream/task-state
         </div>
     );
 }
