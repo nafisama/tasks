@@ -12,5 +12,40 @@ export function d6(): number {
 }
 
 export function TwoDice(): JSX.Element {
-    return <div>Two Dice</div>;
+    const [left, setLeft] = useState<number>(2);
+    const [right, setRight] = useState<number>(3);
+
+    function UpdateLeft(): void {
+        // Set visible to be the logical opposite of its previous value
+        const l = d6();
+        setLeft(l);
+    }
+    function UpdateRight(): void {
+        // Set visible to be the logical opposite of its previous value
+        const r = d6();
+        setRight(r);
+    }
+
+    return (
+        <div>
+            <Button onClick={UpdateLeft}>Roll Left</Button>
+            The Left Dice value is{left}
+            <span data-testid="left-die"></span>.
+            <Button onClick={UpdateRight}>Roll Right</Button>
+            The Right Dice value is{right}
+            <span data-testid="right-die"></span>.
+            {
+                // eslint-disable-next-line no-extra-parens
+                left === right ? (
+                    left === 1 ? (
+                        <span>You Lose</span>
+                    ) : (
+                        <span>You Win :D</span>
+                    )
+                ) : (
+                    <span>You Got this!</span>
+                )
+            }
+        </div>
+    );
 }
