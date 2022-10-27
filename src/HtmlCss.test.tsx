@@ -26,6 +26,11 @@ describe("Some HTML Elements are added.", () => {
 });
 
 describe("Some basic CSS is added.", () => {
+    test("There is a floating red box", () => {
+        render(<App />);
+        expect(true);
+    });
+
     test("The background color of the header area is different", () => {
         render(<App />);
         const banner = screen.getByRole("banner");
@@ -58,7 +63,3 @@ describe("Some Bootstrap Elements are added", () => {
         expect(consoleSpy).toHaveBeenCalledWith("Hello World!");
     });
 });
-
-/**
- * Remember, there are additional tasks described on the page!
- */
