@@ -23,8 +23,7 @@ export function ChooseTeam(): JSX.Element {
     }
 
     function clearTeam() {
-        const empty = [];
-        setTeam(empty);
+        setTeam([]);
     }
 
     return (

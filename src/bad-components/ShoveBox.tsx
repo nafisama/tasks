@@ -32,8 +32,6 @@ function MoveableBox({ pos }: { pos: number }): JSX.Element {
 
 export function ShoveBox(): JSX.Element {
     const [position, setPosition] = useState<number>(10);
-    //const box = MoveableBox();
-
     return (
         <div>
             <h3>Shove Box</h3>
