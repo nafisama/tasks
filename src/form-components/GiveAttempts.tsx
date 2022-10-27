@@ -13,7 +13,9 @@ export function GiveAttempts(): JSX.Element {
         <div>
             Attempts Left = {left}
             <Form.Group controlId="formUpdateRequest">
-                <Form.Label>Attempt Request:</Form.Label>
+                <Form.Label>
+                    Attempt Request in the textfield on next line:
+                </Form.Label>
                 <Form.Control value={request} onChange={updateRequest} />
                 <Form.Control
                     type="number"
